@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1>All Users</h1>
+    {% for one_user in all_users %}
+        <p>User ID: {{one_user.id}}</p>
+        <p>First Name: {{one_user.first_name}}</p>
+        <p>Last Name: {{one_user.last_name}}</p>
+        <p>Email: {{one_user.email}}</p>
+        <p>Created At: {{one_user.created_at}}</p>
+        <hr>
+    {% endfor %}
+
+    <a href="/create_user">Add a New User</a>
+
+</body>
+</html>
